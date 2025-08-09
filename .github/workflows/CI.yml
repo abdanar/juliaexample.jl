@@ -39,3 +39,10 @@ jobs:
       - uses: julia-actions/cache@v2
       - uses: julia-actions/julia-buildpkg@v1
       - uses: julia-actions/julia-runtest@v1
+
+      # Add this step to update registries
+      - name: Update Julia registries
+        run: julia -e 'using Pkg; Pkg.Registry.update()'
+      
+      - uses: julia-actions/julia-buildpkg@v1
+      - uses: julia-actions/julia-runtest@v1s
