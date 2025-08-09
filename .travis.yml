@@ -8,7 +8,6 @@ os:
 julia:
   - 1.8
   - 1.9
-  - nightly
 
 notifications:
   email: false
