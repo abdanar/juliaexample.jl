@@ -8,6 +8,8 @@ julia = "1.6.7"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Coverage = "9e28174c-e999-54f4-8b50-2a725f66fdfd"
+Codecov = "a7f614a8-1b43-11e9-0b74-5d5b7d06b6d3"
 
 [targets]
-test = ["Test"]
+test = ["Test", "Coverage", "Codecov"]
